@@ -12,7 +12,7 @@ This is living document. Information will be added and updated frequenty.
 
 ### applying class
 `[class.name-of-class-to-apply]="conditionToApplyClass"`
-`<input #nameControl="ngModel">` will do some magic. Try it out.
+`<input #nameControl="ngModel">` This `"nameControl"` template variable will give  access to the "NgModel" instance for this from input. 
 
 ### Keep in mind
 1. `BrowserAnimationsModule` and `HttpModule` shound be import only once either in `root` module or `core module`
