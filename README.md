@@ -26,3 +26,9 @@ This is living document. Information will be added and updated frequenty.
 
 ### knowing if there is listener
 `this.emitter.observers.length > 0` (here `this.emmitter` the `@Outpu()` of the component)
+
+
+### Types of Directives
+1. `Component`
+2. `Attribute Directive`
+3. `Structural Directive`
