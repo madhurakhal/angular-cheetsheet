@@ -30,5 +30,5 @@ This is living document. Information will be added and updated frequenty.
 
 ### Types of Directives
 1. `Component`
-2. `Attribute Directive`
+2. `Attribute Directive` changes the apperance or behavior of a DOM element.
 3. `Structural Directive`
