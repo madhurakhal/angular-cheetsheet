@@ -32,3 +32,10 @@ This is living document. Information will be added and updated frequenty.
 1. `Component`
 2. `Attribute Directive` changes the apperance or behavior of a DOM element.
 3. `Structural Directive`
+
+
+### Query Decoractors
+1. ViewChild `@ViewChild(selector) tmplB: TemplateRef<any> `
+2. ViewChildern `@ViewChildern(selector) tmplLstA: QueryList<TemplateRef<any>>`
+3. ContentChild `@ContentChild(selector) tmplA: TemplateRef<any>`
+4. ContentChildern `@ContentChildren(selector) tmplLstB: QueryList<TemplateRef<any>>`
