@@ -41,4 +41,4 @@ This is living document. Information will be added and updated frequenty.
 4. ContentChildern `@ContentChildren(selector) tmplLstB: QueryList<TemplateRef<any>>`
 
 ### Shadow Piercing
-`::ng-deep.viewType {}` can be used to break the shadow dom or view encapulation in angular.
+`::ng-deep.viewType {}` can be used to break the shadow dom or view encapulation in angular. I will only effect the Child Components only.
