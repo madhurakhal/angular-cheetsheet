@@ -42,3 +42,10 @@ This is living document. Information will be added and updated frequenty.
 
 ### Shadow Piercing
 `::ng-deep.viewType {}` can be used to break the shadow dom or view encapulation in angular. I will only effect the Child Components only.
+
+
+### Pipes
+try to use only pure pipe. Be careful when using `async` pipe in angular
+
+### ngFor
+1. use `trackBy` in `ngFor` for any list.
