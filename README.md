@@ -51,3 +51,17 @@ try to use only pure pipe. Be careful when using `async` pipe in angular
 1. use `trackBy` in `ngFor` for any list.
 ` *ngFor="let item of list; trackBy: trackByFunc"`
 `const trackByFunc = (idx: number, itm: any) => itm.id`
+
+### Caching
+
+#### Caching Adds Complexity
+1. `Cache management`
+2. `Security`
+3. `Storage`
+4. `Extrage Logic`
+
+#### Memoizing is best option
+1. Can be easily done by TypeScript decorators.
+2. `@Memomize(5)
+    public callApi() {}
+    `
