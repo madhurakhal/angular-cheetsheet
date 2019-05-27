@@ -49,3 +49,4 @@ try to use only pure pipe. Be careful when using `async` pipe in angular
 
 ### ngFor
 1. use `trackBy` in `ngFor` for any list.
+` *ngFor="let item of list; trackBy: trackByFunc"`
