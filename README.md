@@ -65,3 +65,8 @@ try to use only pure pipe. Be careful when using `async` pipe in angular
 2. `@Memomize(5)
     public callApi() {}
     `
+
+
+### reducing import
+1. imports required components in routing module and set the static proporty in routing module
+2. use routing module static property for importing and exproting the component.
