@@ -70,3 +70,33 @@ try to use only pure pipe. Be careful when using `async` pipe in angular
 ### reducing import
 1. imports required components in routing module and set the static proporty in routing module
 2. use routing module static property for importing and exproting the component.
+
+### Preventing Reimport of Core
+1. Core should only be imported into the root/app module
+`export function throwIfAlreadyLoaded(parentModule: any, moduleName: string) {
+    if (parentModule) {
+        throw new Error(`${moduleName} has already been loaded. Import core modules in the AppModule only`);
+    }
+}
+export class CoreModule {
+    constructor(@Optional() @SkipSelf() parentModule: CoreModue) {
+        throwIfAlreadyLoaded(parentModule, 'CoreModule')
+    }
+}
+`
+2. Alternative: Base class as a guard.
+`
+export class EnsureModuleLoadedOnceGuard {
+    constructor(targetModuel: any) {
+        if(targetModule) {
+            throw new Error(`${targetModule.constructor.name} has already been loaded. Import core modules in the AppModule only`);
+        }
+    }
+}
+
+export class CoreModule extends EnsureModuleLoadedOnceGuard {
+    constructor(@Optional() @SkipSelf() parentModule: CoreModue) {
+        super(parentModule)
+    }
+}
+`
