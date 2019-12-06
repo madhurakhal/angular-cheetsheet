@@ -100,3 +100,17 @@ export class CoreModule extends EnsureModuleLoadedOnceGuard {
     }
 }
 `
+
+### Container Components
+1. Interact with the store
+2. Pass obserable streams via async pipe
+3. Receive events from child presenter components
+4. Decide what toe do with events/data
+
+### Presentational Container
+1. Receive plain data from parent
+2. Display data/make it pretty
+3. User/system events are raised to parent via emitters
+    1. Decisions are deferred
+    2. Component is resuable and flexible
+4. No knowledge of store, services, selectors, actions etc.
