@@ -114,3 +114,14 @@ export class CoreModule extends EnsureModuleLoadedOnceGuard {
     1. Decisions are deferred
     2. Component is resuable and flexible
 4. No knowledge of store, services, selectors, actions etc.
+
+
+### Importants
+1. In `tsconfig.json`
+`
+paths: {
+  '@core/*': ['app/modules/core/*']
+}
+`
+2. Don't do `<input [value]="'hello world'"/>`
+3.
