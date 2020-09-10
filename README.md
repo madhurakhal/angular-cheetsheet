@@ -124,4 +124,6 @@ paths: {
 }
 `
 2. Don't do `<input [value]="'hello world'"/>`
-3.
+
+### Content porjection
+1. ngProjectAs
