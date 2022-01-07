@@ -128,3 +128,7 @@ paths: {
 ### Content porjection
 2. <ng-content></ng-content>
 1. ngProjectAs
+
+### Change detections
+1. platformBrowserDynamic().bootstrapModule(AppModule).then(module => enableDebugTools(module.injector.get(ApplicationRef).components[]0));
+2. ng.profiler.timeChangeDetection()
